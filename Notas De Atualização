@@ -1,0 +1,52 @@
+<><><><><><><><><><><><>>CalC Caloria 1.5 (Correção de Erros e Bugs)<><><><><><><><><><><><><><><><><><>< 
+
+16/10/2023
+Atualização feita por Allam Gabriel;
+github = AllamAprendiz;
+
+=======BACK-END :=======
+1*
+-Falha na criação de arquivo com mesmo nome "index",sendo trocado index.phppara CalCular.php;
+
+2*
+-Correção de Erro de Lógica ao Calcular um valor vazio na escolha de Quantidades,sendo trocada a lógica,linhas do novo código;
+Seleciona"Prato"
+-Linha 55 Até Linha 58;
+
+Seleciona"Sobremesa"
+-Linha 83 Até Linha 86;
+
+Seleciona"Bebida"
+-Linha 112 Até Linha 115
+
+3*
+-Adições de Comentários em Faltas e Implementações de Novos Comentários;
+
+4*Novas Linhas de Códigos de Bootystrap nas Tags de select;
+obs: Linhas dos Selects :
+-Pratos - 127 ;
+-Sobremesa - 150;
+-Bebida - 172 ;
+
+=======FIM DAS NOTAS BACK-END=======
+
+
+
+
+=======FRONT-END========
+1*
+-Opção de Selecionar foi adicionada para evitar bug,onde se usuário não escolhesse a quantidade desejada iria mostrar a falha em seguida;
+-Adicionado novos resultaados de falta de escolha na tela de total calorias;
+2*
+-Correção de Erro onde dois alimentos do cardápio estava sem "Cal" escrito ao lado de seu valor;
+3*
+Novo Visual de Bootstrap em:
+-Tabelas;
+-Inputs de Seleção;
+
+4*Correção de Erro em que não havia como saber de qual o resultado da calorias estavam se referindo,se era do :
+-Prato;
+-Sobremesa;
+-Bebidas;
+
+=======FIM DAS NOTAS FRONT-END=======

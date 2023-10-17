@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalC Caloria</title>
+
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FIM DA ESTILIAZAÇÃO COM BOOTSTRAP 4 -->
+
+</head>
+<body style="background-color: rgb(96, 96, 219);">
+<div class="container">
+    <form action="CalcularCaloria.php" method="post">
+        <!-- CRIA A TABELA DE CARDÁPIO -->
+        <table class="table table-white" style="background-color: white;">
+
+            <tr>
+                <!-- CRIA O TÍTILO -->
+                <td style="border: 1px solid black;">
+                    <h3>
+                        CARDÁPIO & <br>
+                        CALORIAS
+                    </h3>
+                </td>
+                <!-- FIM DO TÍTULO -->
+
+                <!-- CRIA BLOCO VAZIO PARA MELHORar O VISUAL DOS td -->
+                <td style="border: 1px solid black;color: white;">
+
+                </td>
+                <td style="border: 1px solid black;color: white;">
+
+                </td>
+                <!-- FIM DO CÓDIGO VAZIO td -->
+            </tr>
+
+                <!-- CRIA OS td´s DOS TIPOS DE CARDÁPIOS -->
+            <tr style="background-color: blue;">
+                <td style="border: 1px solid black;color: white;">
+                    Prato
+                </td>
+                <td style="border: 1px solid black;color: white;">
+                    Sobremesa
+                </td>
+                <td style="border: 1px solid black;color: white;">
+                    Bebidas
+                </td>
+            </tr>
+             <!-- FIM DOS td´s DOS TIPOS DE CARDÁPIOS-->
+
+             <!-- CRIA TRÊS BLOCOS DE CARDÁPIO Prato/Sobremesa/Bebida-->
+            <tr style="border: 1px solid black;color: white;">
+                <td style="border: 1px solid black;color: Blue;">
+                    <p> <!-- MOSTRA A OPÇÕES DE PRATO -->
+                        Vegetariano - 180 cal
+                    </p>
+                 <br>
+                    <p>
+                        Peixe - 230 cal 
+                    </p>
+                 <br>
+                    <p>
+                        Frango - 250 cal
+                    </p>
+                 <br>
+                    <p>
+                        Carne - 350 cal
+                    </p>
+                </td>
+                <!-- FIM DAS OPÇÕES DE PRATO -->
+
+                <!-- MOSTRA OPÇÕES DE SOBREMESA -->
+                <td style="border: 1px solid black;color: Blue;"> <!-- MOSTRA A OPÇÃO OPÇÃO DE SOBREMESA -->
+                    <p>
+                        Abacaxi - 75 Cal
+                    </p>
+                  <br>
+                    <p>
+                        Sorvete diet - 110 Cal
+                    </p>
+                 <br>
+                    <p>
+                        Mousse diet - 170 Cal
+                    </p>
+                  <br>
+                    <p>
+                        Mousse Chocolate - 200 cal
+                    </p>
+                </td>
+                <!-- FIM DAS OPÇÕES DE SOBREMESA  -->
+
+                <!-- MOSTRA OPOÇÕES DE BEBIDA -->
+                <td style="border: 1px solid black;color: Blue;"> <!-- MOSTRA A OPÇÃO DE BEBIDA -->
+                    <p>
+                        Chá - 20 cal
+                    </p>
+                  <br>
+                    <p>
+                        Suco de Laranja - 70 cal
+                    </p>
+                  <br>
+                    <p>
+                        Suco de melão - 100 cal
+                    </p>
+                 <br>
+                    <p>
+                        Refrigerante - 65 cal
+                    </p>
+                </td>
+                <!-- FIM DAS OPÇÕES DE BEBIDA  -->
+            </tr>
+            
+            <!-- FIM DO BLOCO DE CARDÁPIO -->
+
+               <!-- CRIA A ESCOLHA DAS OPÇÕES E QUANTIDADE DOS PRODUTOS -->
+            <tr style="border: 1px solid black;color: white;"> 
+
+                <!-- OPÇÕES DE PRATOS -->
+                <td style="border: 1px solid black;color: Black;">  
+                   <label for="EscolherPrato_for">Escolher Prato</label> 
+                    <div class="form-group">
+                    <select name="EscolherPrato_name" id="EscolherPrato_id" class="form-control">
+                            <option value="Selecione">Selecione</option>
+                            <option value="Vegetariano">Vegetariano</option>
+                            <option value="Peixe">Peixe</option>
+                            <option value="Frango">Franco</option>
+                            <option value="Carne">Carne</option>
+                    </select>
+                   </div>
+                   <!-- FIM DAS OPÇÕES -->
+
+                   <br>
+
+                <!-- CRIA A LABEL DE QUANTIDADES -->
+                        <label for="QuantidadeDePratos_for">Quantidade</label>
+                        <input type="number" name="QuantidadeDePratos_name" id="QuantidadeDePratos_id">      
+                             
+                </td>
+                <!-- FIM DA LABEL DE QUANTIDADES -->
+
+                <!-- OPÇÕES DE SOBREMESAS -->
+                <td style="border: 1px solid black;color: black;">
+                    <label for="EscolherSobremesa_for">Escolher Sobremesa</label> 
+                    <div class="form-group">
+                        <select name="EscolherSobremesa_name" id="EscolherSobremesa_id" class="form-control">
+                            <option value="Selecione">Selecione</option>
+                            <option value="Abacaxi">Abacaxi</option>
+                            <option value="Sorvetediet">Sorvete diet</option>
+                            <option value="Moussediet">Mousse diet</option>
+                            <option value="MousseChocolate">Mousse Chocolate</option>
+                    </select> 
+                   </div>
+                   <!-- FIM DAS OPÇÕES -->
+
+                   <br>         
+                    
+                   <!-- CRIA A LABEL DE QUANTIDADES -->
+                        <label for="QuantidadeDeSobremesa_for">Quantidade</label>
+                        <input type="number" name="QuantidadeDeSobremesas_name" id="QuantidadeDeSobremesa_id"> 
+                    <!-- FIM DA LABEL DE QUANTIDADES -->
+                </td>
+
+
+                <td style="border: 1px solid black;color: black;">
+                    <label for="EscolherBebida_for">Escolher Bebida</label>
+                    <div class="form-group">
+                        <select name="EscolherBebida_name" id="EscolherBebida_id" class="form-control">
+                            <option value="Selecione">Selecione</option>
+                            <option value="Cha">Cha</option>
+                            <option value="SucoDeLaranja">Suco De Laranja</option>
+                            <option value="SucoDeMelao">Suco De Melao</option>
+                            <option value="Refrigerante">Refrigerante</option>
+                    </select> 
+                   </div>
+                   <br>
+                        <label for="QuantidadeDeBebida_for">Quantidade</label>
+                        <input type="number" name="QuantidadeDeBebidas_name" id="QuantidadeDeBebida_id">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="FINALIZAR"></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
