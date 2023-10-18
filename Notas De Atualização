@@ -6,7 +6,7 @@ github = AllamAprendiz;
 
 =======BACK-END :=======
 1*
--Falha na criação de arquivo com mesmo nome "index",sendo trocado index.phppara CalCular.php;
+-Falha na criação de arquivo com mesmo nome "index",sendo trocado index.php para CalCular.php;
 
 2*
 -Correção de Erro de Lógica ao Calcular um valor vazio na escolha de Quantidades,sendo trocada a lógica,linhas do novo código;
